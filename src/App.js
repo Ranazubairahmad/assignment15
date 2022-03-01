@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
+import APPBar from "./components/AppBar"
+import LeftBar from "./components/LeftBar";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+<Grid container>
+
+<Grid sm={2} >  <LeftBar/></Grid>
+
+<Grid sm={8}></Grid>
+
+<Grid sm={2}></Grid>
+
+</Grid>
+
+
+    <APPBar/>
+   <LeftBar/>
     </div>
   );
 }
